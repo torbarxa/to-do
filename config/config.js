@@ -1,18 +1,19 @@
 const argv = require('yargs')
     .command('crear', 'Crear nuevas tareas', {
-        description: {
+        descripcion: {
             demand: true,
             alias: 'd'
         }
     })
     .command('actualizar', 'Actualizar una tarea', {
-        description: {
+        descripcion: {
             demand: true,
             alias: 'd'
         },
         completado: {
             alias: 'c',
-            default: true
+            default: true,
+            desc: 'Marca la tasa com a completada'
         }
     })
     .help()
