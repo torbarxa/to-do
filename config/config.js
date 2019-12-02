@@ -5,6 +5,13 @@ const argv = require('yargs')
             alias: 'd'
         }
     })
+    .command('borrar', 'Borrar una tarea', {
+        descripcion: {
+            demand: true,
+            alias: 'd'
+        }
+    })
+    .command('listar', 'Listar tareas')
     .command('actualizar', 'Actualizar una tarea', {
         descripcion: {
             demand: true,
